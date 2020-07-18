@@ -120,7 +120,7 @@ addNewRow();
 					if(data == "ORDER_COMPLETED"){
 						$("#get_order_data").trigger("reset");
 						if(confirm("Do you want to print?")){
-							window.location.href = "invoice_bill.php";
+							window.location.href = "invoice_bill.php?"+invoice;
 						}else{
 							alert("Purchase successful! But invoice was not developed.");
 						} 
